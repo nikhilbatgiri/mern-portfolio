@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+.projects {
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+
+    @include mobile{
+        height: fit-content;
+        overflow: hidden;
+    }
+    
+    .wrapper{
+        max-width: 1068px;
+        height: 100%;
+        margin: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+        h1{
+            font-size: 50px;
+        }
+    }
+}

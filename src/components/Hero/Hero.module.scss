@@ -1,0 +1,153 @@
+@import '../../App.scss';
+
+.hero{
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+}
+
+.wrapper{
+    max-width: 1068px;
+    height: 100%;
+    margin: auto;
+    // z-index: 1;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textContainer{
+        width: 75%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        // margin-left: auto;
+        z-index: 1;
+
+        @include mobile{
+            width: 100%;
+            height: 75%;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        h2{
+            font-size: 30px;
+            color: darkcyan;
+            letter-spacing: 10px;
+            white-space: nowrap;
+
+            span{
+                color: white;
+                letter-spacing: 0;
+                font-weight: lighter;
+            }
+
+            @include mobile{
+                font-size: 22px;
+            }
+        }
+
+        h1{
+            font-size: 60px;
+            line-height: 125%;
+            white-space: nowrap;
+
+            span{
+                color: white;
+                font-weight: lighter;
+            }
+
+            @include mobile{
+                font-size: 46px;
+                white-space: inherit;
+                text-align: center;
+                line-height: 100%;
+            }
+        }
+
+        img{
+            width: 10%;
+        }
+
+        .btn{
+            width: auto;
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        .btn:hover{
+            background: rgba(255,255,255,0.3);
+        }
+
+        .social{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .socialbtn:hover{
+            scale: 125%;
+        }
+    }
+}
+
+// .buttons{
+//     width: auto;
+//     margin-right: 20px;
+// }
+
+.imageContainer{
+    position: relative;
+    z-index: 1;
+
+    img{
+        width: 90%;
+
+        @include mobile{
+            // display: none;
+            width: 60%;
+            position: relative;
+        }
+    }
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        top: 5%;
+    }
+
+}
+
+.slidingTextContainer{
+    position: absolute;
+    font-size: 40vh;
+    bottom: 150px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+}
