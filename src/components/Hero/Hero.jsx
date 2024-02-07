@@ -1,6 +1,10 @@
 import { Link } from 'react-scroll'
 import styles from './Hero.module.scss'
 import { motion } from 'framer-motion'
+import scroll from '../assets/scroll.png'
+import hero from '../assets/hero2.png'
+import linkedin from '../assets/linkedin.png'
+import github from '../assets/github.png'
 
 const textVariants = {
     initial:{x:-500,opacity:0},
@@ -39,16 +43,16 @@ const Hero = () => {
                     </div>
                     <motion.div className={styles.social} initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}} transition={{duration:0.5}}>
                         <a href='https://www.linkedin.com/in/nikhil-batgiri' target='blank'>
-                            <img className={styles.socialbtn} src='/linkedin.png' alt=''/>
+                            <img className={styles.socialbtn} src={linkedin} alt=''/>
                         </a>
                         <a href='https://github.com/nikhilbatgiri' target='blank'>
-                            <img className={styles.socialbtn} src='/github.png' alt=''/>
+                            <img className={styles.socialbtn} src={github} alt=''/>
                         </a>
                     </motion.div>
-                    <motion.img variants={textVariants} animate='scrollButton' src='/scroll.png' alt='' />
+                    <motion.img variants={textVariants} animate='scrollButton' src={scroll} alt='' />
                 </motion.div>
                 <div className={styles.imageContainer}>
-                    <img src='/hero2.png' alt=''></img>
+                    <img src={hero} alt=''></img>
                 </div>
             </div>
             <motion.div className={styles.slidingTextContainer} variants={sliderVariants} initial='initial' animate='animate'>
