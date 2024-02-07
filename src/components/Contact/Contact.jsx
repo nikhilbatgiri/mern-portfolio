@@ -45,6 +45,10 @@ const Contact = () => {
                         <button type='submit' value='Send' className={styles.button}>Send</button>
                         {/* <input type="submit" value="Send" className={styles.button}/> */}
                     </div>
+                    <div>
+                        <p>or contact at:</p>
+                        <p>nikhilbatgiri@gmail.com | +91 8055 19 6575</p>
+                    </div>
                 </form>
             </div>
         </div>
