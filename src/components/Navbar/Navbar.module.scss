@@ -1,0 +1,89 @@
+@import '../../App.scss';
+
+.navbar {
+    height: 7vh;
+    // max-width: 1068px;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 8%;
+    color: lightgray;
+    letter-spacing: 2px;
+    z-index: 2;
+
+    .logo{
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-left: 4%;
+    }
+  
+    @include mobile {
+      flex-direction: row;
+      align-items: flex-start;
+      z-index: 2;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+}
+  
+.menuToggle {
+    display: none;
+    cursor: pointer;
+  
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .burger {
+      width: 25px;
+      height: 3px;
+      background-color: lightgray;
+      margin: 6px 0;
+    }
+}
+  
+.menu {
+    list-style: none;
+    display: flex;
+    z-index: 2;
+  
+    @include mobile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 75%;
+      background-color: rgba(12, 12, 29, 0.95);
+      position: absolute;
+      top: 7vh;
+    //   left: 0;
+      right: 0;
+      padding: 10px;
+    }
+  
+    &.open {
+      display: flex;
+    }
+  
+    li {
+      margin-right: 20px;
+  
+      @include mobile {
+        margin: 10px 0;
+      }
+  
+      a {
+        text-decoration: none;
+        color: lightgray;
+        cursor: pointer;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+}
+  

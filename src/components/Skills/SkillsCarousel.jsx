@@ -8,7 +8,7 @@ import img5 from '../assets/skill-5.png';
 import img6 from '../assets/skill-6.png';
 import img7 from '../assets/skill-7.png';
 import img8 from '../assets/skill-8.png';
-import img9 from '../assets/skill-9.png';
+// import img9 from '../assets/skill-9.png';
 import img10 from '../assets/skill-10.png';
 import img11 from '../assets/skill-11.png';
 import img12 from '../assets/skill-12.png';
@@ -71,10 +71,10 @@ const SkillsCarousel = () => {
           <img src={img8} alt=""/>
           <h5>Bootstrap</h5>
       </div>
-      <div className={styles.item}>
+      {/* <div className={styles.item}>
           <img src={img9} alt=""/>
           <h5>TailwindCSS</h5>
-      </div>
+      </div> */}
       <div className={styles.item}>
           <img src={img10} alt=""/>
           <h5>Material UI</h5>
